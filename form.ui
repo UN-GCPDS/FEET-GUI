@@ -1293,7 +1293,7 @@ p, li { white-space: pre-wrap; }
          <string notr="true"/>
         </property>
         <property name="currentIndex">
-         <number>1</number>
+         <number>3</number>
         </property>
         <property name="tabBarAutoHide">
          <bool>false</bool>
@@ -3404,7 +3404,7 @@ p, li { white-space: pre-wrap; }
               <widget class="QLabel" name="label">
                <property name="font">
                 <font>
-                 <pointsize>11</pointsize>
+                 <pointsize>12</pointsize>
                 </font>
                </property>
                <property name="text">
