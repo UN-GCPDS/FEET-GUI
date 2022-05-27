@@ -4,11 +4,15 @@ import matplotlib.colors as colors
 import matplotlib.cm as cmx
 from matplotlib.widgets import CheckButtons
 
-
-dic_dermatomes = {0:'Backgroud', 10:'Medial Plantar Pie Derecho', 11:'Medial Plantar Pie Izquierdo', 20:'Lateral Plantar Pie Derecho', 21:'Lateral Plantar Pie Izquierdo',
+#DIC DERMATOMES IN SPANISH
+dic_dermatomes_es = {0:'Backgroud', 10:'Medial Plantar Pie Derecho', 11:'Medial Plantar Pie Izquierdo', 20:'Lateral Plantar Pie Derecho', 21:'Lateral Plantar Pie Izquierdo',
                   30:'Sural Pie Derecho', 31:'Sural Pie Izquierdo', 40:'Tibial Pie Derecho', 41:'Tibial Pie Izquierdo',
                   50:'Saphenous Pie Derecho', 51:'Saphenous Pie Izquierdo', 255:'Edges'}
 
+#DIC DERMATOMES IN ENGLISH
+dic_dermatomes = {0:'Backgroud', 10:'Medial Plantar Right Foot', 11:'Medial Plantar Left Foot', 20:'Lateral Plantar Right Foot', 21:'Lateral Plantar Left Foot',
+                  30:'Sural Right Foot', 31:'Sural Left Foot', 40:'Tibial Right Foot', 41:'Tibial Left Foot',
+                  50:'Saphenous Right Foot', 51:'Saphenous Left Foot', 255:'Edges'}
 
 derm_id = list(dic_dermatomes.keys())
 derm_id.sort()
@@ -95,9 +99,9 @@ def plot_report(img_temps, segmented_temps, mean_temps, dermatomes_temps, dermat
     lines.append(l2)
     # axs_temp.set_ylim([np.min(segmented_temps[segmented_temps != 0]), np.max(segmented_temps)])
     # axs_temp.set_yticks(np.linspace(np.min(segmented_temps[segmented_temps != 0]), np.max(segmented_temps),5))
-    axs_temp.set_title("Temperatura media de pies")
-    axs_temp.set_xlabel("Tiempo (min)")
-    axs_temp.set_ylabel("Temperatura (°C)")
+    axs_temp.set_title("Feet mean temperatures")
+    axs_temp.set_xlabel("Time  (min)")
+    axs_temp.set_ylabel("Temperature (°C)")
     axs_temp.grid(visible= True)
     # axs_temp.legend()
     # fig.tight_layout()
